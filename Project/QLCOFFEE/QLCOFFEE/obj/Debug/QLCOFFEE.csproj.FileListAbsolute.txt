@@ -1,0 +1,17 @@
+C:\Users\HP\Documents\GitHub\Coffee-Management-System-\Project\QLCOFFEE\QLCOFFEE\bin\Debug\QLCOFFEE.exe
+C:\Users\HP\Documents\GitHub\Coffee-Management-System-\Project\QLCOFFEE\QLCOFFEE\bin\Debug\QLCOFFEE.pdb
+C:\Users\HP\Documents\GitHub\Coffee-Management-System-\Project\QLCOFFEE\QLCOFFEE\obj\Debug\QLCOFFEE.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\GitHub\Coffee-Management-System-\Project\QLCOFFEE\QLCOFFEE\obj\Debug\QLCOFFEE.frmLogin.resources
+C:\Users\HP\Documents\GitHub\Coffee-Management-System-\Project\QLCOFFEE\QLCOFFEE\obj\Debug\QLCOFFEE.Properties.Resources.resources
+C:\Users\HP\Documents\GitHub\Coffee-Management-System-\Project\QLCOFFEE\QLCOFFEE\obj\Debug\QLCOFFEE.csproj.GenerateResource.Cache
+C:\Users\HP\Documents\GitHub\Coffee-Management-System-\Project\QLCOFFEE\QLCOFFEE\obj\Debug\QLCOFFEE.exe.licenses
+C:\Users\HP\Documents\GitHub\Coffee-Management-System-\Project\QLCOFFEE\QLCOFFEE\obj\Debug\QLCOFFEE.exe
+C:\Users\HP\Documents\GitHub\Coffee-Management-System-\Project\QLCOFFEE\QLCOFFEE\obj\Debug\QLCOFFEE.pdb
+C:\Users\HP\Documents\GitHub\Coffee-Management-System-\Project\QLCOFFEE\QLCOFFEE\obj\Debug\QLCOFFEE.frmMain.resources
+C:\Users\HP\Documents\GitHub\Coffee-Management-System-\Project\QLCOFFEE\QLCOFFEE\obj\Debug\QLCOFFEE.frmBookTable.resources
+C:\Users\HP\Documents\GitHub\Coffee-Management-System-\Project\QLCOFFEE\QLCOFFEE\obj\Debug\QLCOFFEE.frmAccountProfile.resources
+C:\Users\HP\Documents\GitHub\Coffee-Management-System-\Project\QLCOFFEE\QLCOFFEE\obj\Debug\QLCOFFEE.frmRevenue.resources
+C:\Users\HP\Documents\GitHub\Coffee-Management-System-\Project\QLCOFFEE\QLCOFFEE\obj\Debug\QLCOFFEE.frmFood.resources
+C:\Users\HP\Documents\GitHub\Coffee-Management-System-\Project\QLCOFFEE\QLCOFFEE\obj\Debug\QLCOFFEE.frmFoodCategory.resources
+C:\Users\HP\Documents\GitHub\Coffee-Management-System-\Project\QLCOFFEE\QLCOFFEE\obj\Debug\QLCOFFEE.frmAccount.resources
+C:\Users\HP\Documents\GitHub\Coffee-Management-System-\Project\QLCOFFEE\QLCOFFEE\obj\Debug\QLCOFFEE.frmFoodTable.resources
