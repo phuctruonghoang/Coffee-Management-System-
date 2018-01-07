@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFoodTable));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnEditTable = new DevComponents.DotNetBar.ButtonX();
             this.btnShowTable = new DevComponents.DotNetBar.ButtonX();
@@ -40,8 +41,8 @@
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.tbTableName = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.cbStatusTable = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTableFood)).BeginInit();
             this.groupPanel2.SuspendLayout();
@@ -57,7 +58,7 @@
             this.groupPanel1.Controls.Add(this.btnDeleteTable);
             this.groupPanel1.Location = new System.Drawing.Point(7, 2);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(355, 58);
+            this.groupPanel1.Size = new System.Drawing.Size(355, 67);
             // 
             // 
             // 
@@ -93,9 +94,10 @@
             // 
             this.btnEditTable.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnEditTable.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnEditTable.Image = ((System.Drawing.Image)(resources.GetObject("btnEditTable.Image")));
             this.btnEditTable.Location = new System.Drawing.Point(272, 3);
             this.btnEditTable.Name = "btnEditTable";
-            this.btnEditTable.Size = new System.Drawing.Size(75, 23);
+            this.btnEditTable.Size = new System.Drawing.Size(75, 36);
             this.btnEditTable.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnEditTable.TabIndex = 3;
             this.btnEditTable.Text = "Sửa";
@@ -104,9 +106,10 @@
             // 
             this.btnShowTable.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnShowTable.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnShowTable.Image = ((System.Drawing.Image)(resources.GetObject("btnShowTable.Image")));
             this.btnShowTable.Location = new System.Drawing.Point(183, 3);
             this.btnShowTable.Name = "btnShowTable";
-            this.btnShowTable.Size = new System.Drawing.Size(75, 23);
+            this.btnShowTable.Size = new System.Drawing.Size(75, 36);
             this.btnShowTable.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnShowTable.TabIndex = 4;
             this.btnShowTable.Text = "Xem";
@@ -115,9 +118,10 @@
             // 
             this.btnAddTable.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnAddTable.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnAddTable.Image = ((System.Drawing.Image)(resources.GetObject("btnAddTable.Image")));
             this.btnAddTable.Location = new System.Drawing.Point(3, 3);
             this.btnAddTable.Name = "btnAddTable";
-            this.btnAddTable.Size = new System.Drawing.Size(75, 23);
+            this.btnAddTable.Size = new System.Drawing.Size(75, 36);
             this.btnAddTable.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnAddTable.TabIndex = 1;
             this.btnAddTable.Text = "Thêm";
@@ -126,9 +130,10 @@
             // 
             this.btnDeleteTable.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnDeleteTable.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnDeleteTable.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteTable.Image")));
             this.btnDeleteTable.Location = new System.Drawing.Point(93, 3);
             this.btnDeleteTable.Name = "btnDeleteTable";
-            this.btnDeleteTable.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteTable.Size = new System.Drawing.Size(75, 36);
             this.btnDeleteTable.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnDeleteTable.TabIndex = 2;
             this.btnDeleteTable.Text = "Xoá";
@@ -136,27 +141,29 @@
             // dtgvTableFood
             // 
             this.dtgvTableFood.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvTableFood.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvTableFood.DefaultCellStyle = dataGridViewCellStyle5;
             this.dtgvTableFood.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dtgvTableFood.Location = new System.Drawing.Point(7, 181);
+            this.dtgvTableFood.Location = new System.Drawing.Point(7, 190);
             this.dtgvTableFood.Name = "dtgvTableFood";
-            this.dtgvTableFood.Size = new System.Drawing.Size(355, 183);
+            this.dtgvTableFood.Size = new System.Drawing.Size(355, 174);
             this.dtgvTableFood.TabIndex = 19;
             // 
             // labelX1
             // 
+            this.labelX1.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX1.ForeColor = System.Drawing.Color.Blue;
             this.labelX1.Location = new System.Drawing.Point(3, 3);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(75, 23);
@@ -178,11 +185,13 @@
             // 
             // labelX2
             // 
+            this.labelX2.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX2.ForeColor = System.Drawing.Color.Blue;
             this.labelX2.Location = new System.Drawing.Point(3, 32);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(101, 23);
@@ -211,7 +220,7 @@
             this.groupPanel2.Controls.Add(this.tbTableID);
             this.groupPanel2.Controls.Add(this.labelX2);
             this.groupPanel2.Controls.Add(this.tbTableName);
-            this.groupPanel2.Location = new System.Drawing.Point(7, 66);
+            this.groupPanel2.Location = new System.Drawing.Point(7, 75);
             this.groupPanel2.Name = "groupPanel2";
             this.groupPanel2.Size = new System.Drawing.Size(355, 109);
             // 
@@ -245,19 +254,6 @@
             this.groupPanel2.TabIndex = 21;
             this.groupPanel2.Text = "Bàn cafe";
             // 
-            // labelX3
-            // 
-            // 
-            // 
-            // 
-            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX3.Location = new System.Drawing.Point(3, 61);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(101, 23);
-            this.labelX3.TabIndex = 10;
-            this.labelX3.Text = "Trạng thái:";
-            // 
             // cbStatusTable
             // 
             this.cbStatusTable.DisplayMember = "Text";
@@ -270,6 +266,21 @@
             this.cbStatusTable.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cbStatusTable.TabIndex = 22;
             // 
+            // labelX3
+            // 
+            this.labelX3.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX3.ForeColor = System.Drawing.Color.Blue;
+            this.labelX3.Location = new System.Drawing.Point(3, 61);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Size = new System.Drawing.Size(101, 23);
+            this.labelX3.TabIndex = 10;
+            this.labelX3.Text = "Trạng thái:";
+            // 
             // frmFoodTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,6 +289,7 @@
             this.Controls.Add(this.groupPanel1);
             this.Controls.Add(this.dtgvTableFood);
             this.Controls.Add(this.groupPanel2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmFoodTable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Quản lý bàn cafe";

@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRevenue));
             this.dtgvBill = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.dtStartDate = new System.Windows.Forms.DateTimePicker();
@@ -42,14 +43,14 @@
             // dtgvBill
             // 
             this.dtgvBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvBill.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvBill.DefaultCellStyle = dataGridViewCellStyle4;
             this.dtgvBill.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dtgvBill.Location = new System.Drawing.Point(2, 42);
             this.dtgvBill.Name = "dtgvBill";
@@ -58,11 +59,13 @@
             // 
             // labelX1
             // 
+            this.labelX1.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX1.ForeColor = System.Drawing.Color.Blue;
             this.labelX1.Location = new System.Drawing.Point(12, 9);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(108, 23);
@@ -78,11 +81,13 @@
             // 
             // labelX2
             // 
+            this.labelX2.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX2.ForeColor = System.Drawing.Color.Blue;
             this.labelX2.Location = new System.Drawing.Point(339, 9);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(108, 23);
@@ -100,9 +105,10 @@
             // 
             this.btnVeiwBill.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnVeiwBill.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnVeiwBill.Image = ((System.Drawing.Image)(resources.GetObject("btnVeiwBill.Image")));
             this.btnVeiwBill.Location = new System.Drawing.Point(468, 383);
             this.btnVeiwBill.Name = "btnVeiwBill";
-            this.btnVeiwBill.Size = new System.Drawing.Size(75, 23);
+            this.btnVeiwBill.Size = new System.Drawing.Size(74, 40);
             this.btnVeiwBill.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnVeiwBill.TabIndex = 5;
             this.btnVeiwBill.Text = "Thống kê";
@@ -112,9 +118,10 @@
             this.btnExit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnExit.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.Location = new System.Drawing.Point(582, 384);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 22);
+            this.btnExit.Size = new System.Drawing.Size(75, 39);
             this.btnExit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnExit.TabIndex = 6;
             this.btnExit.Text = "Thoát";
@@ -125,7 +132,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(669, 410);
+            this.ClientSize = new System.Drawing.Size(669, 428);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnVeiwBill);
             this.Controls.Add(this.dtEndate);
@@ -133,6 +140,7 @@
             this.Controls.Add(this.dtStartDate);
             this.Controls.Add(this.labelX1);
             this.Controls.Add(this.dtgvBill);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRevenue";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thống kê doanh thu";

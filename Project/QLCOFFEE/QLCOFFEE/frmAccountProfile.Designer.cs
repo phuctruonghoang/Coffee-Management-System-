@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAccountProfile));
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.txbLogin = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txbDisplayName = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -44,11 +45,13 @@
             // 
             // labelX1
             // 
+            this.labelX1.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX1.ForeColor = System.Drawing.Color.Blue;
             this.labelX1.Location = new System.Drawing.Point(12, 12);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(125, 23);
@@ -82,11 +85,13 @@
             // 
             // labelX2
             // 
+            this.labelX2.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX2.ForeColor = System.Drawing.Color.Blue;
             this.labelX2.Location = new System.Drawing.Point(12, 68);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(125, 23);
@@ -108,11 +113,13 @@
             // 
             // labelX3
             // 
+            this.labelX3.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX3.ForeColor = System.Drawing.Color.Blue;
             this.labelX3.Location = new System.Drawing.Point(12, 124);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(125, 23);
@@ -134,11 +141,13 @@
             // 
             // labelX4
             // 
+            this.labelX4.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX4.ForeColor = System.Drawing.Color.Blue;
             this.labelX4.Location = new System.Drawing.Point(12, 180);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(125, 23);
@@ -160,11 +169,13 @@
             // 
             // labelX5
             // 
+            this.labelX5.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
             this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX5.ForeColor = System.Drawing.Color.Blue;
             this.labelX5.Location = new System.Drawing.Point(12, 236);
             this.labelX5.Name = "labelX5";
             this.labelX5.Size = new System.Drawing.Size(206, 23);
@@ -175,9 +186,10 @@
             // 
             this.btnUpdate.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnUpdate.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
             this.btnUpdate.Location = new System.Drawing.Point(12, 292);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.Size = new System.Drawing.Size(67, 41);
             this.btnUpdate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnUpdate.TabIndex = 11;
             this.btnUpdate.Text = "Cập nhật";
@@ -186,9 +198,11 @@
             // 
             this.btnExit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnExit.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.Location = new System.Drawing.Point(166, 292);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(75, 41);
             this.btnExit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnExit.TabIndex = 12;
             this.btnExit.Text = "Thoát";
@@ -199,7 +213,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(253, 321);
+            this.ClientSize = new System.Drawing.Size(253, 342);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.tbReEnterPassword);
@@ -212,6 +226,7 @@
             this.Controls.Add(this.labelX2);
             this.Controls.Add(this.txbLogin);
             this.Controls.Add(this.labelX1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAccountProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thông tin tài khoản";

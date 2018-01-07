@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAccount));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btnResetPassword = new DevComponents.DotNetBar.ButtonX();
             this.btnEditAcoount = new DevComponents.DotNetBar.ButtonX();
             this.btnShowAccount = new DevComponents.DotNetBar.ButtonX();
             this.btnAddAccount = new DevComponents.DotNetBar.ButtonX();
@@ -42,7 +44,6 @@
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.cbType = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.btnResetPassword = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).BeginInit();
             this.groupPanel2.SuspendLayout();
@@ -59,7 +60,7 @@
             this.groupPanel1.Controls.Add(this.btnDeleteAccount);
             this.groupPanel1.Location = new System.Drawing.Point(7, 2);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(355, 91);
+            this.groupPanel1.Size = new System.Drawing.Size(355, 124);
             // 
             // 
             // 
@@ -91,13 +92,26 @@
             this.groupPanel1.TabIndex = 23;
             this.groupPanel1.Text = "Quản lý";
             // 
+            // btnResetPassword
+            // 
+            this.btnResetPassword.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnResetPassword.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnResetPassword.Image = ((System.Drawing.Image)(resources.GetObject("btnResetPassword.Image")));
+            this.btnResetPassword.Location = new System.Drawing.Point(128, 52);
+            this.btnResetPassword.Name = "btnResetPassword";
+            this.btnResetPassword.Size = new System.Drawing.Size(93, 47);
+            this.btnResetPassword.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnResetPassword.TabIndex = 5;
+            this.btnResetPassword.Text = "Đặt lại mật khẩu";
+            // 
             // btnEditAcoount
             // 
             this.btnEditAcoount.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnEditAcoount.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnEditAcoount.Image = ((System.Drawing.Image)(resources.GetObject("btnEditAcoount.Image")));
             this.btnEditAcoount.Location = new System.Drawing.Point(272, 3);
             this.btnEditAcoount.Name = "btnEditAcoount";
-            this.btnEditAcoount.Size = new System.Drawing.Size(75, 23);
+            this.btnEditAcoount.Size = new System.Drawing.Size(75, 41);
             this.btnEditAcoount.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnEditAcoount.TabIndex = 3;
             this.btnEditAcoount.Text = "Sửa";
@@ -106,9 +120,10 @@
             // 
             this.btnShowAccount.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnShowAccount.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnShowAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnShowAccount.Image")));
             this.btnShowAccount.Location = new System.Drawing.Point(183, 3);
             this.btnShowAccount.Name = "btnShowAccount";
-            this.btnShowAccount.Size = new System.Drawing.Size(75, 23);
+            this.btnShowAccount.Size = new System.Drawing.Size(75, 41);
             this.btnShowAccount.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnShowAccount.TabIndex = 4;
             this.btnShowAccount.Text = "Xem";
@@ -117,9 +132,10 @@
             // 
             this.btnAddAccount.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnAddAccount.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnAddAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnAddAccount.Image")));
             this.btnAddAccount.Location = new System.Drawing.Point(3, 3);
             this.btnAddAccount.Name = "btnAddAccount";
-            this.btnAddAccount.Size = new System.Drawing.Size(75, 23);
+            this.btnAddAccount.Size = new System.Drawing.Size(75, 41);
             this.btnAddAccount.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnAddAccount.TabIndex = 1;
             this.btnAddAccount.Text = "Thêm";
@@ -128,9 +144,10 @@
             // 
             this.btnDeleteAccount.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnDeleteAccount.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnDeleteAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAccount.Image")));
             this.btnDeleteAccount.Location = new System.Drawing.Point(93, 3);
             this.btnDeleteAccount.Name = "btnDeleteAccount";
-            this.btnDeleteAccount.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteAccount.Size = new System.Drawing.Size(75, 41);
             this.btnDeleteAccount.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnDeleteAccount.TabIndex = 2;
             this.btnDeleteAccount.Text = "Xoá";
@@ -138,27 +155,29 @@
             // dtgvAccount
             // 
             this.dtgvAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvAccount.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvAccount.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvAccount.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dtgvAccount.Location = new System.Drawing.Point(7, 214);
+            this.dtgvAccount.Location = new System.Drawing.Point(7, 220);
             this.dtgvAccount.Name = "dtgvAccount";
-            this.dtgvAccount.Size = new System.Drawing.Size(355, 212);
+            this.dtgvAccount.Size = new System.Drawing.Size(355, 206);
             this.dtgvAccount.TabIndex = 22;
             // 
             // labelX1
             // 
+            this.labelX1.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX1.ForeColor = System.Drawing.Color.Blue;
             this.labelX1.Location = new System.Drawing.Point(3, 3);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(75, 23);
@@ -180,11 +199,13 @@
             // 
             // labelX2
             // 
+            this.labelX2.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX2.ForeColor = System.Drawing.Color.Blue;
             this.labelX2.Location = new System.Drawing.Point(3, 32);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(101, 23);
@@ -213,9 +234,9 @@
             this.groupPanel2.Controls.Add(this.tbIdAccount);
             this.groupPanel2.Controls.Add(this.labelX2);
             this.groupPanel2.Controls.Add(this.tbNameDisplay);
-            this.groupPanel2.Location = new System.Drawing.Point(7, 99);
+            this.groupPanel2.Location = new System.Drawing.Point(7, 132);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(355, 109);
+            this.groupPanel2.Size = new System.Drawing.Size(355, 82);
             // 
             // 
             // 
@@ -272,17 +293,6 @@
             this.labelX3.TabIndex = 10;
             this.labelX3.Text = "Loại tài khoản:";
             // 
-            // btnResetPassword
-            // 
-            this.btnResetPassword.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnResetPassword.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnResetPassword.Location = new System.Drawing.Point(143, 32);
-            this.btnResetPassword.Name = "btnResetPassword";
-            this.btnResetPassword.Size = new System.Drawing.Size(75, 34);
-            this.btnResetPassword.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnResetPassword.TabIndex = 5;
-            this.btnResetPassword.Text = "Đặt lại mật khẩu";
-            // 
             // frmAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,6 +301,7 @@
             this.Controls.Add(this.groupPanel1);
             this.Controls.Add(this.dtgvAccount);
             this.Controls.Add(this.groupPanel2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Quản lý tài khoản";

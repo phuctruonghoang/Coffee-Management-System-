@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBookTable));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
@@ -55,7 +56,7 @@
             // 
             this.flowLayoutPanel1.Location = new System.Drawing.Point(-1, 1);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(449, 465);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(449, 475);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // panelEx1
@@ -87,6 +88,7 @@
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX2.ForeColor = System.Drawing.Color.Blue;
             this.labelX2.Location = new System.Drawing.Point(4, 59);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(107, 23);
@@ -100,6 +102,7 @@
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX1.ForeColor = System.Drawing.Color.Blue;
             this.labelX1.Location = new System.Drawing.Point(4, 3);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(107, 23);
@@ -123,9 +126,10 @@
             // 
             this.btnAddFood.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnAddFood.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnAddFood.Location = new System.Drawing.Point(260, 30);
+            this.btnAddFood.Image = ((System.Drawing.Image)(resources.GetObject("btnAddFood.Image")));
+            this.btnAddFood.Location = new System.Drawing.Point(260, 22);
             this.btnAddFood.Name = "btnAddFood";
-            this.btnAddFood.Size = new System.Drawing.Size(75, 23);
+            this.btnAddFood.Size = new System.Drawing.Size(75, 42);
             this.btnAddFood.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnAddFood.TabIndex = 2;
             this.btnAddFood.Text = "Thêm món";
@@ -157,7 +161,7 @@
             this.panelEx2.Controls.Add(this.btnCheckOut);
             this.panelEx2.Location = new System.Drawing.Point(454, 405);
             this.panelEx2.Name = "panelEx2";
-            this.panelEx2.Size = new System.Drawing.Size(338, 61);
+            this.panelEx2.Size = new System.Drawing.Size(338, 71);
             this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx2.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -169,27 +173,28 @@
             // 
             // nmDiscount
             // 
-            this.nmDiscount.Location = new System.Drawing.Point(133, 37);
+            this.nmDiscount.Location = new System.Drawing.Point(133, 46);
             this.nmDiscount.Name = "nmDiscount";
-            this.nmDiscount.Size = new System.Drawing.Size(75, 21);
+            this.nmDiscount.Size = new System.Drawing.Size(89, 21);
             this.nmDiscount.TabIndex = 4;
             this.nmDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // cbSwitchTable
             // 
             this.cbSwitchTable.FormattingEnabled = true;
-            this.cbSwitchTable.Location = new System.Drawing.Point(4, 37);
+            this.cbSwitchTable.Location = new System.Drawing.Point(4, 45);
             this.cbSwitchTable.Name = "cbSwitchTable";
-            this.cbSwitchTable.Size = new System.Drawing.Size(75, 21);
+            this.cbSwitchTable.Size = new System.Drawing.Size(85, 21);
             this.cbSwitchTable.TabIndex = 3;
             // 
             // btnSwitchTable
             // 
             this.btnSwitchTable.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnSwitchTable.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnSwitchTable.Image = ((System.Drawing.Image)(resources.GetObject("btnSwitchTable.Image")));
             this.btnSwitchTable.Location = new System.Drawing.Point(4, 4);
             this.btnSwitchTable.Name = "btnSwitchTable";
-            this.btnSwitchTable.Size = new System.Drawing.Size(75, 23);
+            this.btnSwitchTable.Size = new System.Drawing.Size(85, 36);
             this.btnSwitchTable.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnSwitchTable.TabIndex = 2;
             this.btnSwitchTable.Text = "Chuyển bàn";
@@ -198,9 +203,10 @@
             // 
             this.btnDiscount.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnDiscount.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnDiscount.Image = ((System.Drawing.Image)(resources.GetObject("btnDiscount.Image")));
             this.btnDiscount.Location = new System.Drawing.Point(133, 3);
             this.btnDiscount.Name = "btnDiscount";
-            this.btnDiscount.Size = new System.Drawing.Size(75, 23);
+            this.btnDiscount.Size = new System.Drawing.Size(89, 37);
             this.btnDiscount.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnDiscount.TabIndex = 1;
             this.btnDiscount.Text = "Giảm giá";
@@ -209,9 +215,10 @@
             // 
             this.btnCheckOut.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnCheckOut.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnCheckOut.Location = new System.Drawing.Point(260, 3);
+            this.btnCheckOut.Image = ((System.Drawing.Image)(resources.GetObject("btnCheckOut.Image")));
+            this.btnCheckOut.Location = new System.Drawing.Point(250, 4);
             this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(75, 55);
+            this.btnCheckOut.Size = new System.Drawing.Size(85, 55);
             this.btnCheckOut.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnCheckOut.TabIndex = 0;
             this.btnCheckOut.Text = "Thanh toán";
@@ -245,11 +252,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(798, 467);
+            this.ClientSize = new System.Drawing.Size(798, 476);
             this.Controls.Add(this.panelEx3);
             this.Controls.Add(this.panelEx2);
             this.Controls.Add(this.panelEx1);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBookTable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Đặt bàn";

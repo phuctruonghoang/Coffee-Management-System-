@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFoodCategory));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnEditCategory = new DevComponents.DotNetBar.ButtonX();
             this.btnShowCategory = new DevComponents.DotNetBar.ButtonX();
@@ -55,7 +56,7 @@
             this.groupPanel1.Controls.Add(this.btnDeleteCategory);
             this.groupPanel1.Location = new System.Drawing.Point(7, 4);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(355, 58);
+            this.groupPanel1.Size = new System.Drawing.Size(355, 76);
             // 
             // 
             // 
@@ -91,9 +92,10 @@
             // 
             this.btnEditCategory.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnEditCategory.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnEditCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnEditCategory.Image")));
             this.btnEditCategory.Location = new System.Drawing.Point(272, 3);
             this.btnEditCategory.Name = "btnEditCategory";
-            this.btnEditCategory.Size = new System.Drawing.Size(75, 23);
+            this.btnEditCategory.Size = new System.Drawing.Size(75, 35);
             this.btnEditCategory.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnEditCategory.TabIndex = 3;
             this.btnEditCategory.Text = "Sửa";
@@ -102,9 +104,10 @@
             // 
             this.btnShowCategory.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnShowCategory.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnShowCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnShowCategory.Image")));
             this.btnShowCategory.Location = new System.Drawing.Point(183, 3);
             this.btnShowCategory.Name = "btnShowCategory";
-            this.btnShowCategory.Size = new System.Drawing.Size(75, 23);
+            this.btnShowCategory.Size = new System.Drawing.Size(75, 35);
             this.btnShowCategory.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnShowCategory.TabIndex = 4;
             this.btnShowCategory.Text = "Xem";
@@ -113,9 +116,10 @@
             // 
             this.btnAddCategory.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnAddCategory.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnAddCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnAddCategory.Image")));
             this.btnAddCategory.Location = new System.Drawing.Point(3, 3);
             this.btnAddCategory.Name = "btnAddCategory";
-            this.btnAddCategory.Size = new System.Drawing.Size(75, 23);
+            this.btnAddCategory.Size = new System.Drawing.Size(75, 35);
             this.btnAddCategory.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnAddCategory.TabIndex = 1;
             this.btnAddCategory.Text = "Thêm";
@@ -124,9 +128,10 @@
             // 
             this.btnDeleteCategory.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnDeleteCategory.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnDeleteCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteCategory.Image")));
             this.btnDeleteCategory.Location = new System.Drawing.Point(93, 3);
             this.btnDeleteCategory.Name = "btnDeleteCategory";
-            this.btnDeleteCategory.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteCategory.Size = new System.Drawing.Size(75, 35);
             this.btnDeleteCategory.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnDeleteCategory.TabIndex = 2;
             this.btnDeleteCategory.Text = "Xoá";
@@ -134,18 +139,18 @@
             // dtgvFoodCategory
             // 
             this.dtgvFoodCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvFoodCategory.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvFoodCategory.DefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvFoodCategory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dtgvFoodCategory.Location = new System.Drawing.Point(7, 163);
+            this.dtgvFoodCategory.Location = new System.Drawing.Point(7, 184);
             this.dtgvFoodCategory.Name = "dtgvFoodCategory";
-            this.dtgvFoodCategory.Size = new System.Drawing.Size(355, 203);
+            this.dtgvFoodCategory.Size = new System.Drawing.Size(355, 182);
             this.dtgvFoodCategory.TabIndex = 15;
             // 
             // tbCategoryName
@@ -162,11 +167,13 @@
             // 
             // labelX2
             // 
+            this.labelX2.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX2.ForeColor = System.Drawing.Color.Blue;
             this.labelX2.Location = new System.Drawing.Point(3, 40);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(101, 23);
@@ -188,11 +195,13 @@
             // 
             // labelX1
             // 
+            this.labelX1.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX1.ForeColor = System.Drawing.Color.Blue;
             this.labelX1.Location = new System.Drawing.Point(3, 11);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(75, 23);
@@ -207,9 +216,9 @@
             this.groupPanel2.Controls.Add(this.tbCategoryID);
             this.groupPanel2.Controls.Add(this.labelX2);
             this.groupPanel2.Controls.Add(this.tbCategoryName);
-            this.groupPanel2.Location = new System.Drawing.Point(7, 68);
+            this.groupPanel2.Location = new System.Drawing.Point(7, 81);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(355, 89);
+            this.groupPanel2.Size = new System.Drawing.Size(355, 97);
             // 
             // 
             // 
@@ -249,6 +258,7 @@
             this.Controls.Add(this.groupPanel2);
             this.Controls.Add(this.groupPanel1);
             this.Controls.Add(this.dtgvFoodCategory);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmFoodCategory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Quản lý danh mục món ăn";
