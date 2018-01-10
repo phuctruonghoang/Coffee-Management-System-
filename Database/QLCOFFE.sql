@@ -65,3 +65,13 @@ create table BillInfo
 	foreign key (IdFood) references Food(ID)
 )
 go
+
+create proc usp_GetAccountByUserName 
+	@username nvarchar(100)
+as 
+begin
+	select * from Account where UserName = @username
+end
+go
+
+exec usp_GetAccountByUserName @username = N'hoangphuc'
